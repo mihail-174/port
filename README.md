@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Портфолио
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Верстка сайта:
+* [Show Company — Праздничное агентство в Санкт-Петербурге](http://showcompany.ru/)
+* [Номас — Завод емкостного оборудования](http://www.nomas.ru/)
+* [Гермес — Производство пивзаводов](http://pivzavod-germes.ru/)
+* [АвтоСпецВан — Производство автофургонов из сэндвич-панелей](http://asv74.com/)
+* [СпецТрансАвто — Производство и поставка спецтехники «УРАЛ» и «КАМАЗ»](http://cta-miass.ru/)
+* [КТБмаш — Производство оборудования для птицефабрик](http://ktbmash.com/)
+* [УралМобиле — Запчасти для ам УРАЛ](http://www.uralmob.ru/)
+* [РИФ Спецтехника — Интернет-каталог спецтехники](https://rifst.ru/)
+* [РИФ Запчасти — Интернет магазин запчастей УРАЛ](http://rifural.ru/)
+* [АСТ Слон — Интернет-магазин спецтехники](http://astslon.ru/)
+* [Типография «Полиграф»](http://miassprint.ru/)
+* [Гостевой дом Анастасия](http://feocrim.ru/)
+* [Гофротара — Производство тары и упаковки из гофрокартона](http://tara174.ru/)
+* Клуб Юмора, Весёлых Историй и Анекдотов
+* [Авангард — Интернет-магазин запчастей для грузовых и легковых автомобилей](http://avangard174.ru/)
+* [Чайный Гуру — Интернет-магазин настоящего китайского чая](http://чайныйгуру.рус/)
+* [Розовая Панда — Интернет-магазин текстиля](http://rosepanda.ru/)
+* [Сапфир — Уплотнители из термоэластопласта](http://sapfirmiass.ru/)
+* [Металлоконструкции «ВЕКТОР»](https://mihail-174.github.io/portfolio/work/vektormk/dist/)
+* [ЯМЗ Экспорт: двигатели ямз, запчасти ямз по России и СНГ](http://ymz-export.ru/)
+* [Асептлайн — Медицинская одноразовая одежда и комплекты белья из нетканых материалов](http://aseptline.ru/)
+* [УралСпецТранс - Автомобили Урал и автомобили Камаз](https://www.uralst.ru/)
+* [Металлоконструкции «ВЕКТОР»](http://vektormk.ru/)
+* СпецТехКомплект
+* [Жемчужина Урала, озеро Тургояк - официальный сайт санатория и базы отдыха](http://uralpearl.algus.net/)
+* [Уральская Спецтехника - Продажа спецтехники УРАЛ и КАМАЗ](http://uralst74.ru/)
+* [ГК Спецтехника - Производство и поставка спецтехники на базе УРАЛ, КАМАЗ, МАЗ, IVECO](http://ural174.ru/)
+* [Техавтоком - техника для работы](http://tak74.ru/)
 
-## Available Scripts
+## Шаблонные:
+* [ЯМЗ Экспорт: двигатели ямз, запчасти ямз по России и СНГ](http://ymz-export.ru/)
+* [Авангард — Интернет-магазин запчастей для грузовых и легковых автомобилей](http://avangard174.ru/)
+* [Сапфир — Уплотнители из термоэластопласта](http://sapfirmiass.ru/)
+* [Протэко - Производственная Тэновая Коипания](http://proteko.su/)
+* [«ТЭН и К» — сварочное оборудование от производителя](http://tenikmiass.ru/)
 
-In the project directory, you can run:
+## Верстка страниц:
+* [ПИРАМИДА – производитель бытового и промышленного теплового оборудования (стр. Сотрудничество)](https://piramida-plus.ru/cooperation)
+* Мир на ощупь – Интерактивное пространство в Санкт-Петербурге (стр. Франшиза)
+* Мир на ощупь – Интерактивное пространство в Санкт-Петербурге (стр. О проекте)
+* Мир на ощупь – Интерактивное пространство в Санкт-Петербурге (стр. Бизнес-тренинги)
+* [АКСИОМА — Пластиковые окна в Челябинске](https://aksioma174.ru/)
+* [АКСИОМА — Теплое и холодное Остекление балконов в челябинске](https://aksioma174.ru/osteklenie-balkonov)
+* [IXAT Bonus - предлагает каждому пользователю самый простой и честный способ постоянного заработка](https://mihail-174.github.io/portfolio/work/ixat-bonus/)
+* [НПО «ВЕКТОР» — производство и продажа автоцистерн - (главная страница)](vektornpo.ru)
 
-### `yarn start`
+## Верстка LandingPage:
+* [Villagio Millennium Park](https://mihail-174.github.io/portfolio/work/villagio-millennium-park/src/)
+* [Вкусное правильное питание от кафе LaScala](https://mihail-174.github.io/portfolio/work/lascala/dist/)
+* [Star Light JETS - Крупнейшая мировая сеть частных самолетов](https://mihail-174.github.io/portfolio/work/star-light-jets/gulp_files/)
+* [Компьютерная помощь в Москве и Московской области](https://mihail-174.github.io/portfolio/work/pc-help/dist/)
+* [Курсы вождения и восстановления навыков для женщин](https://mihail-174.github.io/portfolio/work/energy-of-motion/dist/)
+* [Автобус 44 — Пассажирские перевозки](https://mihail-174.github.io/portfolio/work/autobus44/dist/)
+* [Chok Chok — Увлажняющая косметическая продукция](https://mihail-174.github.io/portfolio/work/chok-chok/dist/index.html)
+* ЭЛКОД Технолоджи - консалтинг в сфере регулируемых закупок
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Конфигураторы, Калькуляторы:
+* [Конфигуратор спецтехники zvmslon.ru на VUE.js](https://mihail-174.github.io/portfolio/work/configurator-zvmslon-vuejs/dist/)
+* Конфигуратор спецтехники vektornpo
+* Калькулятор тонировки автомобилей на REACT
+* Конфигуратор спецтехники vektornpo.ru (верстка)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Игры
+* Японские кроссворды
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Баннеры
+* zvmslon.ru
+* astslon.ru
+* vektornpo.ru
