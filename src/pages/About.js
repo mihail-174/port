@@ -111,19 +111,19 @@ function About() {
 							<div className={"skils__item"}>
 								<div className={"skils__label"}>
 									<span>jQuery</span>
-									<span>40%</span>
+									<span>25%</span>
 								</div>
 								<div className={"skils__bar"}>
-									<div className={"skils__level"} style={{width: "40%"}}></div>
+									<div className={"skils__level"} style={{width: "25%"}}></div>
 								</div>
 							</div>
 							<div className={"skils__item"}>
 								<div className={"skils__label"}>
 									<span>JavaScript</span>
-									<span>15%</span>
+									<span>20%</span>
 								</div>
 								<div className={"skils__bar"}>
-									<div className={"skils__level"} style={{width: "15%"}}></div>
+									<div className={"skils__level"} style={{width: "20%"}}></div>
 								</div>
 							</div>
 							<p className={"skils__description"}>
