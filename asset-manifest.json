@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/port/static/css/main.41dcd44c.chunk.css",
+    "main.js": "/port/static/js/main.5a2ce1f1.chunk.js",
+    "main.js.map": "/port/static/js/main.5a2ce1f1.chunk.js.map",
+    "runtime-main.js": "/port/static/js/runtime-main.114a6f08.js",
+    "runtime-main.js.map": "/port/static/js/runtime-main.114a6f08.js.map",
+    "static/js/2.b3ad8b37.chunk.js": "/port/static/js/2.b3ad8b37.chunk.js",
+    "static/js/2.b3ad8b37.chunk.js.map": "/port/static/js/2.b3ad8b37.chunk.js.map",
+    "static/js/3.b5f31d1b.chunk.js": "/port/static/js/3.b5f31d1b.chunk.js",
+    "static/js/3.b5f31d1b.chunk.js.map": "/port/static/js/3.b5f31d1b.chunk.js.map",
+    "index.html": "/port/index.html",
+    "static/css/main.41dcd44c.chunk.css.map": "/port/static/css/main.41dcd44c.chunk.css.map",
+    "static/js/2.b3ad8b37.chunk.js.LICENSE.txt": "/port/static/js/2.b3ad8b37.chunk.js.LICENSE.txt",
+    "static/media/about-photo.b55ad8ea.jpg": "/port/static/media/about-photo.b55ad8ea.jpg",
+    "static/media/font-awesome.scss": "/port/static/media/fa-solid-900.ad31562a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.114a6f08.js",
+    "static/js/2.b3ad8b37.chunk.js",
+    "static/css/main.41dcd44c.chunk.css",
+    "static/js/main.5a2ce1f1.chunk.js"
+  ]
+}
