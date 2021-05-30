@@ -97,7 +97,7 @@ export default function CardWork(props) {
 	return (
 		<div className={"teaser-work"}>
 			<div className={"field-image"}>
-				<img src={"/images/preview/" + props.data.preview + ".jpg"} alt=""/>
+				<img src={"images/preview/" + props.data.preview + ".jpg"} alt=""/>
 			</div>
 			<div className={"field-group-info"}>
 				<div className={"field-name"}>{ props.data.name }</div>

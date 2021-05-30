@@ -80,7 +80,7 @@ function Work(props) {
 					<div className={"work__gallery"}>
 						<img
 							className={""}
-							src={"/images/gallery/" + dataWorks[id].gallery}
+							src={"images/gallery/" + dataWorks[id].gallery}
 							alt=""
 						/>
 					</div>

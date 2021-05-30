@@ -22,11 +22,11 @@ export default function Footer() {
     return (
         <div className={classes.footer}>
             <div className="copyright">{new Date().getFullYear()} © Михаил174</div>
-            <div className={classes.counter}>
-                <a href="https://www.liveinternet.ru/click" target="_blank">
-                    <img src="https://counter.yadro.ru/logo?26.1" title="" alt="" />
-                </a>
-            </div>
+            {/*<div className={classes.counter}>*/}
+            {/*    <a href="https://www.liveinternet.ru/click" target="_blank">*/}
+            {/*        <img src="https://counter.yadro.ru/logo?26.1" title="" alt="" />*/}
+            {/*    </a>*/}
+            {/*</div>*/}
         </div>
     )
 }
