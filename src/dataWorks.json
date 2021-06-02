@@ -1,15 +1,22 @@
 [
 	{
 		"id": 1,
+		"system": "tmi-shop",
 		"name": "ТехМашИнвест. Запчасти",
-		"preview": "tmi",
-		"gallery": "tmi_main.png",
+		"preview": "tmi-shop",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png",
+			"desktop-03.png",
+			"desktop-04.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Поставка запчастей для автомобилей Урал",
 		"used": "gulp, scss, bem, slick, lightgallery, masonry, simplefileinput",
 		"cms": "drupal 7",
 		"time": "",
-		"url": "",
+		"url": "tmi-shop.ru",
 		"all": true,
 		"site": true,
 		"landing": false,
@@ -20,9 +27,16 @@
 	},
 	{
 		"id": 2,
+		"system": "tmidv",
 		"name": "ТехМашИнвест. Спецтехника",
 		"preview": "tmidv",
-		"gallery": "tmidv_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.png",
+			"desktop-03.png",
+			"desktop-04.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Поставка грузовых автомобилей и спецтехники на шасси Урал. Адаптирован под мобильные устройства.",
 		"used": "gulp, scss, bem, slick, lightgallery, masonry, simplefileinput, inputmask",
@@ -39,11 +53,16 @@
 	},
 	{
 		"id": 3,
+		"system": "ural-pearl",
 		"name": "Жемчужина Урала",
 		"preview": "ural-pearl",
-		"gallery": "ural-pearl_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
-		"descr": "Адаптирован под мобильные устройства",
+		"descr": "Официальный сайт санатория и базы отдыха на озере Тургояк. Адаптирован под мобильные устройства.",
 		"used": "gulp, scss, bem, normalize, slick, lightgallery, inputmask",
 		"cms": "drupal 8",
 		"time": "",
@@ -58,9 +77,16 @@
 	},
 	{
 		"id": 4,
+		"system": "urc-yamz",
 		"name": "Уральский ригиональный центр ЯМЗ",
 		"preview": "urc-yamz",
-		"gallery": "urc-yamz_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.png",
+			"desktop-03.png",
+			"desktop-04.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Оригинальные запчасти и двигатели ЯМЗ от официального дилера ЯМЗ, ЯЗДА, ШААЗ",
 		"used": "gulp, scss, bem, normalize, slick, lightgallery, simplefileinput, inputmask",
@@ -77,9 +103,14 @@
 	},
 	{
 		"id": 5,
+		"system": "showcompany",
 		"name": "«Show Company»",
 		"preview": "showcompany",
-		"gallery": "showcompany_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Праздничное агентство. Организация праздников в Санкт-Петербурге. Главная страница с полноэкранной прокруткой.",
 		"used": "SCSS, bootstrap 3",
@@ -96,9 +127,14 @@
 	},
 	{
 		"id": 6,
+		"system": "nomas",
 		"name": "Номас",
 		"preview": "nomas",
-		"gallery": "nomas_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Завод емкостного оборудования. Верстка + натяжка на cms. Адаптирован под мобильные устройства.",
 		"used": "SCSS, bootstrap 3",
@@ -115,11 +151,16 @@
 	},
 	{
 		"id": 7,
+		"system": "pivzavod-germes",
 		"name": "Гермес",
-		"preview": "germes",
-		"gallery": "pivzavod-germes_main.png",
+		"preview": "pivzavod-germes",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
-		"descr": "Производство пивзаводов",
+		"descr": "Производство пивоваренных заводов «под ключ»",
 		"used": "Gulp, SCSS, Materialize, slick, sprite",
 		"cms": "drupal 8",
 		"time": "53ч",
@@ -134,9 +175,14 @@
 	},
 	{
 		"id": 8,
+		"system": "asv74",
 		"name": "АвтоСпецВан",
 		"preview": "asv74",
-		"gallery": "asv74_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Производство автофургонов из сэндвич-панелей. Верстка + натяжка на cms. ",
 		"used": "SCSS",
@@ -153,9 +199,14 @@
 	},
 	{
 		"id": 9,
+		"system": "cta-miass",
 		"name": "СпецТрансАвто",
 		"preview": "cta-miass",
-		"gallery": "cta-miass_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Производство и поставка спецтехники «УРАЛ» и «КАМАЗ». Верстка + натяжка на cms.",
 		"used": "SCSS",
@@ -172,9 +223,16 @@
 	},
 	{
 		"id": 10,
+		"system": "ktbmash",
 		"name": "КТБмаш",
 		"preview": "ktbmash",
-		"gallery": "ktbmash_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png",
+			"desktop-03.png",
+			"desktop-04.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Производство оборудования для птицефабрик. Верстка + натяжка на cms.",
 		"used": "SCSS",
@@ -191,9 +249,13 @@
 	},
 	{
 		"id": 11,
+		"system": "uralmob",
 		"name": "УралМобиле",
 		"preview": "uralmob",
-		"gallery": "uralmob_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Запчасти для ам УРАЛ. Верстка + натяжка на cms.",
 		"used": "SCSS, bootstrap 3",
@@ -210,9 +272,14 @@
 	},
 	{
 		"id": 12,
+		"system": "rifst",
 		"name": "РИФ Спецтехника",
 		"preview": "rifst",
-		"gallery": "rifst_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Запчасти и обслуживание. Верстка + натяжка на cms.",
 		"used": "SCSS, bootstrap 3",
@@ -229,9 +296,14 @@
 	},
 	{
 		"id": 13,
+		"system": "rifural",
 		"name": "РИФ Запчасти",
 		"preview": "rifural",
-		"gallery": "rifural_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Запчасти УРАЛ, производство запчастей УРАЛ. Верстка + натяжка на cms.",
 		"used": "SCSS, bootstrap 3",
@@ -248,9 +320,14 @@
 	},
 	{
 		"id": 14,
+		"system": "astslon",
 		"name": "АСТ Слон",
 		"preview": "astslon",
-		"gallery": "astslon_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "поставка грузовых автомобилей и спецтехники. Верстка + натяжка на cms.",
 		"used": "SCSS, bootstrap 3",
@@ -267,9 +344,14 @@
 	},
 	{
 		"id": 15,
+		"system": "miassprint",
 		"name": "Полиграф",
 		"preview": "miassprint",
-		"gallery": "miassprint_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Типография. Верстка + натяжка на cms.",
 		"used": "SCSS, bootstrap 3",
@@ -286,9 +368,13 @@
 	},
 	{
 		"id": 16,
+		"system": "feocrim",
 		"name": "Гостевой дом Анастасия",
 		"preview": "feocrim",
-		"gallery": "feocrim_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Верстка + натяжка на cms.",
 		"used": "SCSS",
@@ -305,9 +391,14 @@
 	},
 	{
 		"id": 17,
+		"system": "tara174",
 		"name": "ГОФРОТАРА",
 		"preview": "tara174",
-		"gallery": "tara174_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Производство тары и упаковки из гофрокартона",
 		"used": "",
@@ -324,9 +415,14 @@
 	},
 	{
 		"id": 18,
+		"system": "yumorclub",
 		"name": "YumorClub",
 		"preview": "yumorclub",
-		"gallery": "yumorclub_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Клуб Юмора, объединяющий любителей Забавных историй из реальной жизни, смешных анекдотов, прикольных стишков, забавных фотоприколов, афоризмов и демотиваторов. А также ВидеоПриколы и нелепые комментарии из соц.сетей",
 		"used": "",
@@ -343,9 +439,13 @@
 	},
 	{
 		"id": 19,
+		"system": "avangard174",
 		"name": "Авангард",
 		"preview": "avangard174",
-		"gallery": "avangard_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Запчасти для грузовых и легковых автомобилей. Дизайн на основе готового шаблона.",
 		"used": "",
@@ -362,9 +462,14 @@
 	},
 	{
 		"id": 20,
+		"system": "chainyiguru",
 		"name": "Чайный Гуру",
 		"preview": "chainyiguru",
-		"gallery": "chainyiguru_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Интернет-магазин настоящего китайского чая",
 		"used": "",
@@ -381,9 +486,14 @@
 	},
 	{
 		"id": 21,
+		"system": "rosepanda",
 		"name": "Розовая Панда",
 		"preview": "rosepanda",
-		"gallery": "rosepanda_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Интернет-магазин текстиля",
 		"used": "",
@@ -400,9 +510,14 @@
 	},
 	{
 		"id": 22,
+		"system": "sapfirmiass",
 		"name": "Сапфир",
 		"preview": "sapfirmiass",
-		"gallery": "sapfirmiass_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Производство деталей из термоэластопласта под заказ. Дизайн на основе готового шаблона.",
 		"used": "gulp, scss, lightgallery, slick, simplefileinput, bootstrap, inputmask",
@@ -419,9 +534,13 @@
 	},
 	{
 		"id": 23,
+		"system": "vektormk",
 		"name": "ВЕКТОР — Металлоконструкции",
 		"preview": "vektormk",
-		"gallery": "vektormk_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Изготовлением труб большого диаметра, элементов трубопровода, сварных балок и металлоконструкций. Продукцию производим по чертежам заказчика, с учетом всех требований к эксплуатации и размерам.",
 		"used": "gulp, scss, bem, lightgallery, slick, flexbox, sprite",
@@ -438,9 +557,14 @@
 	},
 	{
 		"id": 24,
+		"system": "ymz-export",
 		"name": "ЯМЗ Экспорт",
 		"preview": "ymz-export",
-		"gallery": "ymz-export_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Поставка двигателей ЯМЗ и оригинальных запчастей по России и за рубеж. Дизайн на основе готового шаблона.",
 		"used": "gulp, sass, lightgallery, slick",
@@ -457,9 +581,16 @@
 	},
 	{
 		"id": 25,
+		"system": "aseptline",
 		"name": "АСЕПТЛАЙН",
 		"preview": "aseptline",
-		"gallery": "aseptline_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.png",
+			"desktop-03.png",
+			"desktop-04.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Производство комплектов одноразовой одежды и белья.",
 		"used": "gulp, scss, slick",
@@ -476,9 +607,14 @@
 	},
 	{
 		"id": 26,
+		"system": "uralst",
 		"name": "УралСпецТранс",
 		"preview": "uralst",
-		"gallery": "uralst_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Автомобили Урал и автомобили Камаз. Предлагаем купить: автотопливозаправщик, вахта, прицеп, полуприцеп, цистерна, автомобиль с КМУ, Урал Спец. Адаптирован под мобильные устройства.",
 		"used": "SCSS, jade, Gulp, slick, sprite",
@@ -495,9 +631,14 @@
 	},
 	{
 		"id": 27,
+		"system": "spectechcom",
 		"name": "СпецТехКомплект",
 		"preview": "spectechcom",
-		"gallery": "spectechcom_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.jpg"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Официальный дилер по продаже спецтехники Урал .",
 		"used": "gulp, scss, slick",
@@ -514,9 +655,13 @@
 	},
 	{
 		"id": 28,
+		"system": "piramida-plus_cooperation",
 		"name": "Пирамида. Сотрудничество",
 		"preview": "piramida-plus_cooperation",
-		"gallery": "piramida-plus_cooperation_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Производитель бытового и промышленного теплового оборудования. Верстка страницы Сотрудничество.",
 		"used": "",
@@ -533,9 +678,13 @@
 	},
 	{
 		"id": 29,
+		"system": "touch-world_franshiza",
 		"name": "Мир на ощупь. Франшиза",
 		"preview": "touch-world_franshiza",
-		"gallery": "touch-world_franshiza_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Интерактивное пространство в Санкт-Петербурге. Адаптивная страница под мобильные устройства.",
 		"used": "",
@@ -552,9 +701,13 @@
 	},
 	{
 		"id": 30,
+		"system": "touch-world_o-proekte",
 		"name": "Мир на ощупь. О проекте",
 		"preview": "touch-world_o-proekte",
-		"gallery": "touch-world_o-proekte_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Интерактивное пространство в Санкт-Петербурге. Адаптивная страница под мобильные устройства.",
 		"used": "",
@@ -571,9 +724,13 @@
 	},
 	{
 		"id": 31,
+		"system": "touch-world_biznes-treningi",
 		"name": "Мир на ощупь. Бизнес-тренинги",
 		"preview": "touch-world_biznes-treningi",
-		"gallery": "touch-world_biznes-treningi_maion.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Интерактивное пространство в Санкт-Петербурге. Адаптивная страница под мобильные устройства.",
 		"used": "",
@@ -590,9 +747,13 @@
 	},
 	{
 		"id": 32,
+		"system": "aksioma174",
 		"name": "АКСИОМА. Пластиковые окна",
 		"preview": "aksioma174_main",
-		"gallery": "",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Пластиковые окна в Челябинске. Верстка и натяжка на drupal.",
 		"used": "",
@@ -609,9 +770,13 @@
 	},
 	{
 		"id": 33,
+		"system": "aksioma174_osteklenie-balkonov",
 		"name": "АКСИОМА. Остекление балконов",
 		"preview": "aksioma174_osteklenie-balkonov",
-		"gallery": "",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Теплое и холодное Остекление балконов в челябинске. Верстка и натяжка на drupal.",
 		"used": "",
@@ -627,29 +792,14 @@
 		"javascript": false
 	},
 	{
-		"id": 34,
-		"name": "НПО ВЕКТОР. Главная",
-		"preview": "vektornpo_main-slader",
-		"gallery": "vektornpo_main-slader_main.png",
-		"demo": "",
-		"descr": "3 Промо слайдера",
-		"used": "",
-		"cms": "",
-		"time": "",
-		"url": "vektornpo.ru",
-		"all": true,
-		"site": false,
-		"landing": true,
-		"configurator": false,
-		"react": false,
-		"vue": false,
-		"javascript": false
-	},
-	{
 		"id": 35,
+		"system": "ixat-bonus",
 		"name": "IXAT Bonus",
 		"preview": "ixat-bonus",
-		"gallery": "ixat-bonus_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/ixat-bonus/",
 		"descr": "Полноэкранная прокрутка. При смене слайда происходит анимация элементов. Страница адаптирована под мобильные устройства и планшеты.",
 		"used": "",
@@ -666,9 +816,13 @@
 	},
 	{
 		"id": 36,
+		"system": "villagio-millennium-park",
 		"name": "Villagio Millennium Park",
 		"preview": "Villagio-Millennium-Park",
-		"gallery": "Villagio-Millennium-Park_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/villagio-millennium-park/src/",
 		"descr": "Верстка в 7-ми вариантах компоновки.",
 		"used": "",
@@ -685,9 +839,13 @@
 	},
 	{
 		"id": 37,
+		"system": "lascala",
 		"name": "Кафе LaScala",
 		"preview": "lascala",
-		"gallery": "lascala_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/lascala/dist/",
 		"descr": "Вкусное правильное питание от кафе LaScala",
 		"used": "SCSS, JADE, GULP, BEM, normalize, slick-slider, jQuery-UI, animate.css, inputmask, wow",
@@ -704,9 +862,13 @@
 	},
 	{
 		"id": 38,
+		"system": "star-light-jets",
 		"name": "Star Light JETS",
 		"preview": "Star-Light-JETS",
-		"gallery": "Star-Light-JETS_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/star-light-jets/gulp_files/",
 		"descr": "Крупнейшая мировая сеть частных самолетов ",
 		"used": "",
@@ -723,9 +885,13 @@
 	},
 	{
 		"id": 39,
+		"system": "pc-help",
 		"name": "Компьютерная помощь в Москве и Московской области",
 		"preview": "pc-help",
-		"gallery": "pc-help_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/pc-help/dist/",
 		"descr": "Адаптирован под мобильные устройства и планшеты.",
 		"used": "SCSS, JADE, GULP, BEM, normalize, slick-slider, jQuery-UI, selectFx, inputmask",
@@ -742,9 +908,13 @@
 	},
 	{
 		"id": 40,
+		"system": "energy-of-motion",
 		"name": "Курсы вождения и восстановления навыков для женщин",
 		"preview": "energy-of-motion",
-		"gallery": "energy-of-motion_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/energy-of-motion/dist/",
 		"descr": "Адаптирован под мобильные устройства и планшеты.",
 		"used": "SCSS, JADE, GULP, BEM, normalize, slick-slider, jQuery-UI, inputmask",
@@ -761,9 +931,13 @@
 	},
 	{
 		"id": 41,
+		"system": "autobus-44",
 		"name": "Автобус 44",
 		"preview": "autobus-44",
-		"gallery": "autobus-44_main.png",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/autobus44/dist/",
 		"descr": "Пассажирские перевозки",
 		"used": "",
@@ -780,9 +954,13 @@
 	},
 	{
 		"id": 42,
+		"system": "chok-chok",
 		"name": "chok chok",
 		"preview": "chokchok",
-		"gallery": "chok-chok_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg"
+		],
+		"gallery-mobile": [],
 		"demo": "https://mihail-174.github.io/portfolio/work/chok-chok/dist/",
 		"descr": "Увлажняющая косметическая продукция",
 		"used": "",
@@ -799,13 +977,24 @@
 	},
 	{
 		"id": 43,
+		"system": "configurator-toner",
 		"name": "Калькулятор тонировки автомобилей",
 		"preview": "toner-configurator",
-		"gallery": "",
-		"demo": "",
-		"descr": "Шаг 1 выбираем тип пленки и зону тонировки. Шаг 2 выбираем марку и модель автомобиля. Шаг 3 вывод стоимости и форма отправки выбранных параметров на электронную почту. Адаптирован под мобильные устройства.",
-		"time": "",
-		"url": "",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png",
+			"desktop-03.png",
+			"desktop-04.png"
+		],
+		"gallery-mobile": [
+			"mobile-01.png",
+			"mobile-02.png",
+			"mobile-03.png"
+		],
+		"demo": null,
+		"descr": "Выбор тонировочной пленки с различной светопропускаемостью для 3-х зон (Лобовое стекло, передние боковые стекла и задняя полусфера).<br> Выбор марки и модели автомобиля.<br> Вывод итоговой стоимости, модальное окно с формой отправки скофигурированных данных на email. Данные берутся из json файла.",
+		"time": null,
+		"url": null,
 		"all": true,
 		"site": false,
 		"landing": false,
@@ -816,11 +1005,17 @@
 	},
 	{
 		"id": 44,
+		"system": "configurator-vektornpo",
 		"name": "Конфигуратор спецтехники НПО ВЕКТОР",
 		"preview": "vektornpo-configurator",
-		"gallery": "vektornpo-configurator_main.png",
+		"gallery-desktop": [
+			"screen-01.png",
+			"screen-02.png",
+			"screen-03.png",
+			"screen-04.png"
+		],
 		"demo": "https://mihail-174.github.io/react-configurator-vektornpo/build/",
-		"descr": "Данный конфигуратор выполнен в двух вариантах: на javascript и на vuejs. Сосотоит из 3х типов конфигурации: АКН/АКНС, МВ/МВС, АЦН",
+		"descr": "Данный конфигуратор выполнен в двух вариантах: на javascript и на react. Сосотоит из 3х типов конфигурации: АКН/АКНС, МВ/МВС, АЦН",
 		"time": "9ч",
 		"url": "",
 		"all": true,
@@ -833,9 +1028,12 @@
 	},
 	{
 		"id": 45,
+		"system": "configurator-aksioma174",
 		"name": "Конфигуратор окон aksioma174",
 		"preview": "aksioma174_react",
-		"gallery": "",
+		"gallery-desktop": [
+			"screen-01.jpg"
+		],
 		"demo": "https://mihail-174.github.io/react-configurator-window-aksioma174/",
 		"descr": "",
 		"time": "",
@@ -850,9 +1048,12 @@
 	},
 	{
 		"id": 46,
+		"system": "japanese-crossword",
 		"name": "Японские кроссворды",
 		"preview": "japanese-crossword_react",
-		"gallery": "",
+		"gallery-desktop": [
+			"screen-01.png"
+		],
 		"demo": "https://mihail-174.github.io/react-japanese-crossword/",
 		"descr": "",
 		"time": "",
@@ -867,9 +1068,12 @@
 	},
 	{
 		"id": 47,
+		"system": "configurator-zvmslon",
 		"name": "Конфигуратор спецтехники zvmslon",
 		"preview": "zvmslon-configurator",
-		"gallery": "configurator-zvmslon.jpg",
+		"gallery-desktop": [
+			"screen-01.jpg"
+		],
 		"demo": "https://mihail-174.github.io/portfolio/work/configurator-zvmslon-vuejs/dist/",
 		"descr": "Данный конфигуратор выполнен в двух вариантах: на javascript и на vuejs. Данные подгружаются из json файлов. На каждый тип автомобиля свой файл.",
 		"time": "",
@@ -884,9 +1088,14 @@
 	},
 	{
 		"id": 48,
+		"system": "uralst74",
 		"name": "«Уральская Спецтехника» - Продажа спецтехники УРАЛ и КАМАЗ",
 		"preview": "uralst74",
-		"gallery": "uralst74_main.png",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Адаптирован под мобильные устройства",
 		"used": "gulp, scss, jade, swiper slider",
@@ -903,11 +1112,16 @@
 	},
 	{
 		"id": 49,
-		"name": "ГК «СПЕЦТЕХНИКА» - Производство и поставка спецтехники на базе УРАЛ, КАМАЗ, МАЗ, IVECO",
+		"system": "ural174",
+		"name": "ГК «СПЕЦТЕХНИКА»",
 		"preview": "ural174",
-		"gallery": "ural174_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.jpg"
+		],
+		"gallery-mobile": [],
 		"demo": "",
-		"descr": "Адаптирован под мобильные устройства",
+		"descr": "Производство и поставка спецтехники на базе УРАЛ, КАМАЗ, МАЗ, IVECO",
 		"used": "gulp, scss, jade, swiper",
 		"cms": "drupal 8",
 		"time": "",
@@ -922,9 +1136,14 @@
 	},
 	{
 		"id": 50,
-		"name": "Техавтоком - техника для работы",
+		"system": "tak74",
+		"name": "Техавтоком",
 		"preview": "tak74",
-		"gallery": "tak74_main.jpg",
+		"gallery-desktop": [
+			"desktop-01.jpg",
+			"desktop-02.png"
+		],
+		"gallery-mobile": [],
 		"demo": "",
 		"descr": "Наша компания основана специалистами, которые долгое время работали с ведущим производителем тяжелой грузовой техникой и знают все ее сильные стороны.",
 		"used": "gulp, scss, jade, swiper slider",

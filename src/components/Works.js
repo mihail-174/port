@@ -93,7 +93,7 @@ function Works(props) {
 				{
 					work.map((item, key) => {
 						return (
-							<CardWork data={item} />
+							<CardWork key={key} data={item} />
 							// <Grid className={classes.root} key={key} item xs={6} sm={4}>
 							// {/*<Paper className={classes.paper}>*/}
 							// {/*	<CardWork/>*/}

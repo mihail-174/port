@@ -11,6 +11,7 @@
    --border-color: #dfdfdf;
    --border-radius: 4px;
 
+    --awesome: "Font Awesome 5 Pro";
     --header-height: 68px;
     --box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.1),0px 1px 1px 0px rgba(0,0,0,0.04),0px 1px 3px 0px rgba(0,0,0,0.02);
 }
@@ -26,15 +27,18 @@
 
 .app-wrapper {
     display: grid;
-    grid-column-gap: 12px;
+    grid-column-gap: 16px;
     grid-template-rows: 1fr auto;
     height: 100%;
     align-content: flex-start;
     @media screen and (min-width: 1400px) {
-        grid-template-columns: 1fr repeat(12, 100px) 1fr;
+        grid-template-columns: 1fr repeat(12, 99px) 1fr;
     }
     @media screen and (min-width: 1200px) and (max-width: 1399px) {
-        grid-template-columns: 1fr repeat(12, 87px) 1fr;
+        grid-template-columns: 1fr repeat(12, 82px) 1fr;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+        grid-template-columns: 1fr repeat(12, 68px) 1fr;
     }
     > * {
         grid-column: 2/-2;
@@ -58,10 +62,21 @@ h1 {
     margin: 0;
 }
 .page-title {
+    font-size: 32px;
     margin-bottom: 24px;
     grid-column: 1/-1;
 }
-h4, h5, h6 {
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 28px
+}
+h4 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+h5, h6 {
   font-size: 16px;
   margin-bottom: 16px;
 }
@@ -80,6 +95,62 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+// *********************************************************************
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    color: #fff;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+    background-color: #3f51b5;
+    z-index: 1;
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: 1fr repeat(12, 99px) 1fr;
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 1fr repeat(12, 99px) 1fr;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        grid-template-columns: 1fr repeat(12, 82px) 1fr;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+        grid-template-columns: 1fr repeat(12, 68px) 1fr;
+    }
+ }
+.header__inner {
+    grid-column: 2/-2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.header__name {
+    span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+.header__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    li {
+        list-style: none;
+    }
+    a {
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        transition: all 0.2s ease-in-out;
+        border-radius: 4px;
+        &:hover {
+            background-color: #384aae;
+        }
+    }
 }
 
 // *********************************************************************
@@ -309,7 +380,7 @@ img {
             margin-bottom: 0;
         }
     }
-    h4 {
+    h5 {
         grid-column: 1 / -1;
         margin: 0;
     }
@@ -391,7 +462,8 @@ img {
 // *********************************************************************
 
 .work {
-    //padding: 0 150px;
+    display: grid;
+    gap: 64px;
 }
 .work__card {
     display: grid;
@@ -404,10 +476,12 @@ img {
     //overflow: hidden;
     //box-shadow: var(--box-shadow);
     //padding: 28px 32px 32px 0;
-    padding: 0 150px;
     //padding-bottom: 64px;
-    margin-bottom: 64px;
+    //margin-bottom: 64px;
     //border-bottom: 1px solid #e1e1e1;
+    @media screen and (min-width: 1281px) {
+        padding: 0 150px;
+    }
 }
 .work__title {
     grid-column: 1/-1;
@@ -443,13 +517,370 @@ img {
         font-size: 18px;
     }
 }
-.work__gallery {
+.work__desktop-gallery {
     text-align: center;
+    display: grid;
+    gap: 8px;
+    justify-items: center;
     img {
         border: 1px solid var(--border-color);
         border-radius: var(--border-radius);
     }
     h4 {
         text-align: center;
+    }
+}
+.work__mobile-gallery {
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    h4{
+        grid-column: 1/-1;
+    }
+}
+
+// ТехМашИнвест. Запчасти
+.work-1 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// ТехМашИнвест. Спецтехника
+.work-2 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Жемчужина Урала
+.work-3 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Уральский ригиональный центр ЯМЗ
+.work-4 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Show Company
+.work-5 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Номас
+.work-6 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Гермес
+.work-7 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// АвтоСпецВан
+.work-8 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// СпецТрансАвто
+.work-9 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// КТБмаш
+.work-10 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// УралМобиле
+//.work-11 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// РИФ Спецтехника
+.work-12 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// РИФ Запчасти
+.work-13 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// АСТ Слон
+.work-14 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Полиграф
+.work-15 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Гостевой дом Анастасия
+//.work-16 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// ГОФРОТАРА
+.work-17 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// YumorClub
+.work-18 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Авангард
+//.work-19 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Чайный Гуру
+.work-20 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Розовая Панда
+.work-21 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Сапфир
+.work-22 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// ВЕКТОР — Металлоконструкции
+//.work-23 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// ЯМЗ Экспорт
+.work-24 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// АСЕПТЛАЙН
+.work-25 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// УралСпецТранс
+.work-26 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// СпецТехКомплект
+.work-27 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Пирамида. Сотрудничество
+//.work-28 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Мир на ощупь. Франшиза
+//.work-29 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Мир на ощупь. О проекте
+//.work-30 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Мир на ощупь. Бизнес-тренинги
+//.work-31 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// АКСИОМА. Пластиковые окна
+//.work-32 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// АКСИОМА. Остекление балконов
+//.work-33 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// НПО ВЕКТОР. Главная
+.work-34 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// IXAT Bonus
+//.work-35 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Villagio Millennium Park
+//.work-36 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Кафе LaScala
+//.work-37 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Star Light JETS
+//.work-38 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Компьютерная помощь в Москве и Московской области
+//.work-39 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Курсы вождения и восстановления навыков для женщин
+//.work-40 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Автобус 44
+//.work-41 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// chok chok
+//.work-42 {
+//    .work__desktop-gallery {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+
+// Калькулятор тонировки автомобилей
+.work-43 {
+    .work__desktop-gallery {}
+    .work__mobile-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// «Уральская Спецтехника» - Продажа спецтехники УРАЛ и КАМАЗ
+.work-48 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// ГК «СПЕЦТЕХНИКА»
+.work-49 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Техавтоком
+.work-50 {
+    .work__desktop-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// *********************************************************************
+
+.to-back-page {
+    margin-bottom: 16px;
+    span {
+        position: relative;
+        padding-left: 20px;
+        cursor: pointer;
+        &:hover {
+            color: var(--link-hover);
+        }
+        &::before {
+            content: "\f177";
+            font-family: var(--awesome);
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
     }
 }

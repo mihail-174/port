@@ -95,9 +95,9 @@ export default function CardWork(props) {
 	const classes = useStyles();
 
 	return (
-		<div className={"teaser-work"}>
+		<div className={`teaser-work teaser-work-${props.data.id}`}>
 			<div className={"field-image"}>
-				<img src={"images/preview/" + props.data.preview + ".jpg"} alt=""/>
+				<img src={"images/works/" + props.data.system + "/preview.jpg"} alt=""/>
 			</div>
 			<div className={"field-group-info"}>
 				<div className={"field-name"}>{ props.data.name }</div>
@@ -117,8 +117,8 @@ export default function CardWork(props) {
 						}}
 						className={"btn btn-primary"}
 					>Подробнее</ Link>
-					{ props.data.url && <a className={""} href={props.data.url} target={"_blank"}>Перейти на сайт</a> }
-					{ props.data.demo && <a className={""} href={props.data.demo} target={"_blank"}>Посмотреть демо</a> }
+					{/*{ props.data.url && <a className={""} href={`http://${props.data.url}`} target={"_blank"}>Перейти на сайт</a> }*/}
+					{/*{ props.data.demo && <a className={""} href={props.data.demo} target={"_blank"}>Посмотреть демо</a> }*/}
 				</div>
 			</div>
 		</div>

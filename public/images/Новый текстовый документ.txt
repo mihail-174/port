@@ -1,0 +1,27 @@
+
+	{
+		"id": 34,
+		"system": "aksioma174_osteklenie-balkonov",
+		"name": "НПО ВЕКТОР. Главная",
+		"preview": "vektornpo_main-slader",
+		"gallery-desktop": [
+			"desktop-01.png",
+			"desktop-02.png",
+			"desktop-03.png",
+			"desktop-04.png"
+		],
+		"gallery-mobile": [],
+		"demo": "",
+		"descr": "3 Промо слайдера",
+		"used": "",
+		"cms": "",
+		"time": "",
+		"url": "vektornpo.ru",
+		"all": true,
+		"site": false,
+		"landing": true,
+		"configurator": false,
+		"react": false,
+		"vue": false,
+		"javascript": false
+	},

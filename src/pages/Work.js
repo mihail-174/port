@@ -26,64 +26,119 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function generate(element) {
-	return [0, 1, 2].map((value) =>
-		React.cloneElement(element, {
-			key: value,
-		}),
-	);
-}
+// function generate(element) {
+// 	return [0, 1, 2].map((value) =>
+// 		React.cloneElement(element, {
+// 			key: value,
+// 		}),
+// 	);
+// }
 
 function Work(props) {
 	const classes = useStyles();
 	const [dense, setDense] = React.useState(false);
 	const [secondary, setSecondary] = React.useState(false);
-	const id = parseInt(props.match.params.id) - 1;
+	// const id = parseInt(props.match.params.id) - 1;
+	const id = props.match.params.id;
 	document.documentElement.scrollTop = 0;
+
+	let workData = dataWorks.filter(item=> {
+		if ( item.id === parseInt(id) ) {
+			return item;
+		}
+	});
+	workData = workData[0];
+
+	let desktopGallery = null;
+	if (typeof workData["gallery-desktop"] != 'undefined') {
+		desktopGallery = workData["gallery-desktop"].map((elem, key) => {
+			return (
+				<img
+					key={key}
+					src={`images/works/${workData.system}/${elem}`}
+					alt={ workData.name }
+				/>
+			)
+		});
+	}
+
+	let mobileGallery = null;
+	if (typeof workData["gallery-mobile"] != 'undefined') {
+		mobileGallery = workData["gallery-mobile"].map((elem, key) => {
+			return (
+				<img
+					key={key}
+					src={`images/gallery/${workData.preview}/${elem}`}
+					alt={workData.name}
+				/>
+			)
+		});
+	}
 
 	return (
 		<div className="app-wrapper work-page">
 			<Header/>
 			<div className={"content"}>
 
-				<div className={"work"}>
+				<div className={"to-back-page"} onClick={props.history.goBack}><span>назад</span></div>
+
+				<div className={`work work-${workData.id}`}>
 					<div className={"work__card"}>
 						{/*<img*/}
 						{/*	className={"work__image"}*/}
-						{/*	src={"/images/preview/" + dataWorks[id].preview + ".jpg"}*/}
+						{/*	src={"/images/preview/" + workData.preview + ".jpg"}*/}
 						{/*	alt=""*/}
 						{/*/>*/}
-						<h1 className="work__name">{ dataWorks[id].name }</h1>
+						<h1 className="work__name">{ workData.name }</h1>
 						{
-							dataWorks[id].descr &&
+							workData.descr &&
 							<div className={"work__description-1"}>
-								{ dataWorks[id].descr }
+								<div dangerouslySetInnerHTML={ { __html: workData.descr } }></div>
 							</div>
 						}
 						{/*<div className={"work__description-2"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </div>*/}
 
-						<div className={"work__view"}>
-							<div className={"work__view-item"}>
-								<span>CMS</span>
-								<div>{dataWorks[id].cms ? dataWorks[id].cms : "—"}</div>
-							</div>
-							<div className={"work__view-item"}>
-								<span>Время</span>
-								<div>{dataWorks[id].time ? dataWorks[id].time : "—"}</div>
-							</div>
-							<div className={"work__view-item"}>
-								<span>Использовано</span>
-								<div>{dataWorks[id].used ? dataWorks[id].used : "—"}</div>
-							</div>
+						{
+							workData.configurator
+								?
+								""
+								:
+								<div className={"work__view"}>
+									<div className={"work__view-item"}>
+										<span>CMS</span>
+										<div>{workData.cms ? workData.cms : "—"}</div>
+									</div>
+									<div className={"work__view-item"}>
+										<span>Время</span>
+										<div>{workData.time ? workData.time : "—"}</div>
+									</div>
+									<div className={"work__view-item"}>
+										<span>Использовано</span>
+										<div>{workData.used ? workData.used : "—"}</div>
+									</div>
+								</div>
+						}
+					</div>
+					{/*<div className={"work__gallery"}>*/}
+					{/*	<img*/}
+					{/*		className={""}*/}
+					{/*		src={"images/gallery/" + workData.gallery}*/}
+					{/*		alt=""*/}
+					{/*	/>*/}
+					{/*</div>*/}
+					{
+						desktopGallery &&
+						<div className={"work__desktop-gallery"}>
+							{ desktopGallery }
 						</div>
-					</div>
-					<div className={"work__gallery"}>
-						<img
-							className={""}
-							src={"images/gallery/" + dataWorks[id].gallery}
-							alt=""
-						/>
-					</div>
+					}
+					{/*{*/}
+					{/*	mobileGallery &&*/}
+					{/*	<div className={"work__mobile-gallery"}>*/}
+					{/*		<h4>Мобильная версия</h4>*/}
+					{/*		{ mobileGallery }*/}
+					{/*	</div>*/}
+					{/*}*/}
 				</div>
 
 

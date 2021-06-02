@@ -89,7 +89,7 @@ function About() {
 					{/*<div className="col">*/}
 
 						<div className={"skils"}>
-							<h4>Professional skills</h4>
+							<h5>Professional skills</h5>
 							<div className={"skils__item"}>
 								<div className={"skils__label"}>
 									<span>HTML</span>
@@ -128,18 +128,20 @@ function About() {
 							</div>
 							<p className={"skils__description"}>
 								При верстке использую gulp (в связке с JADE, SCSS, JS), собственный конфиг сборки и компонентный подход.
-								Именование классов по BEM методологии. Flexbox. Grid. Git.
+								Валидная и семантическая верстка с именованием классов по BEM методологии.
+								Flexbox.
+								Grid.
+								Git.
 								Drupal (7 и 8 версии, создание тем и подтем, PHP на уровне понимания кода для натяжки на cms).
 								Имеется небольшой опыт работы с react и vuejs. Написал несколько конфигураторов + кроссворд.
 								Имеется понимание при адаптировании сайта под мобильные устройства и планшеты.
 								JavaScript на базовом уровне (хватает чтобы написать небольшой скрипт с нуля, внесение изменений в существующий скрипт).
-								Люблю изучать новые технологии.
-								Имеется желание повысть свои навыки во frontend разработке в команде профессионалов и новых проектов.
+								Имеется желание повысть свои навыки во frontend разработке в команде профессионалов, изучать новое и развиваться.
 							</p>
 						</div>
 
 						<div className={"about"}>
-							<h4>Коротко обо мне</h4>
+							<h5>Коротко обо мне</h5>
 							<p>
 								Уравновешенный, спокойный. Не имею вредных привычек.
 								Умею вникнуть в суть профессиональной задачи и решить ее используя доступные для этого ресурсы, подхожу к работе ответственно,
@@ -177,7 +179,7 @@ function About() {
 						{/*</div>*/}
 
 						<div className={"education"}>
-							<h4>Образование</h4>
+							<h5>Образование</h5>
 							<div className="timeline">
 								<div className="timeline__item">
 									<i className="mdi mdi-circle bg-primary text-info timeline-icon"></i>
@@ -199,7 +201,7 @@ function About() {
 						</div>
 
 						<div className={"place-work"}>
-							<h4>Место работы</h4>
+							<h5>Место работы</h5>
 							<div className="timeline">
 								<div className="timeline__item">
 									<i className="mdi mdi-circle bg-primary text-info timeline-icon"></i>
