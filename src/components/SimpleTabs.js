@@ -44,6 +44,9 @@ function a11yProps(index) {
 
 const useStyles = makeStyles((theme) => ({
 	root: {
+		"& .MuiTabs-flexContainer": {
+			overflowX: 'auto',
+		},
 		"& .MuiTabs-root": {
 			marginBottom: theme.spacing(3),
 			borderBottom: '1px solid #e8e8e8',

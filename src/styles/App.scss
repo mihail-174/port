@@ -10,10 +10,36 @@
    --link-hover: #dc3545;
    --border-color: #dfdfdf;
    --border-radius: 4px;
+   --font-size-norma: 16px;
 
     --awesome: "Font Awesome 5 Pro";
-    --header-height: 68px;
     --box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.1),0px 1px 1px 0px rgba(0,0,0,0.04),0px 1px 3px 0px rgba(0,0,0,0.02);
+
+    --grid-gutter-width: 16px;
+
+    @media screen and (min-width: 1024px) {
+        --header-height: 68px;
+    }
+    @media screen and (min-width: 1400px) {
+        --grid-columns: 12;
+        --grid-columns-width: 99px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        --grid-columns: 12;
+        --grid-columns-width: 82px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1199px) {
+        --grid-columns: 12;
+        --grid-columns-width: 68px;
+    }
+    @media screen and (max-width: 1023px) {
+        --grid-columns: 4;
+        --grid-columns-width: calc((100vw / 4) - 20px);
+        --header-height: 60px;
+    }
+
+
+
 }
 .app {
     height: 100%;
@@ -27,19 +53,11 @@
 
 .app-wrapper {
     display: grid;
-    grid-column-gap: 16px;
+    grid-template-columns: 1fr repeat(var(--grid-columns), var(--grid-columns-width)) 1fr;
+    grid-column-gap: var(--grid-gutter-width);
     grid-template-rows: 1fr auto;
-    height: 100%;
     align-content: flex-start;
-    @media screen and (min-width: 1400px) {
-        grid-template-columns: 1fr repeat(12, 99px) 1fr;
-    }
-    @media screen and (min-width: 1200px) and (max-width: 1399px) {
-        grid-template-columns: 1fr repeat(12, 82px) 1fr;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1199px) {
-        grid-template-columns: 1fr repeat(12, 68px) 1fr;
-    }
+    height: 100%;
     > * {
         grid-column: 2/-2;
     }
@@ -53,6 +71,7 @@ body {
     height: 100%;
     background-color: var(--page);
     color: var(--text);
+    min-width: 360px;
 }
 h1, h2, h3, h4, h5, h6 {
   color: var(--title);
@@ -110,28 +129,27 @@ img {
     background-color: #3f51b5;
     z-index: 1;
     display: grid;
-    grid-column-gap: 16px;
-    grid-template-columns: 1fr repeat(12, 99px) 1fr;
-    @media screen and (min-width: 1400px) {
-        grid-template-columns: 1fr repeat(12, 99px) 1fr;
-    }
-    @media screen and (min-width: 1200px) and (max-width: 1399px) {
-        grid-template-columns: 1fr repeat(12, 82px) 1fr;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1199px) {
-        grid-template-columns: 1fr repeat(12, 68px) 1fr;
-    }
+    grid-template-columns: 1fr repeat(var(--grid-columns), var(--grid-columns-width)) 1fr;
+    grid-column-gap: var(--grid-gutter-width);
  }
 .header__inner {
     grid-column: 2/-2;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    gap: 16px;
 }
-.header__name {
-    span {
-        font-size: 18px;
-        font-weight: 700;
+.header__names {}
+.header__name1 {
+    font-size: 18px;
+    font-weight: 700;
+    @media screen and (max-width: 1023px) {
+        font-size: var(--font-size-norma);
+    }
+}
+.header__name2 {
+    @media screen and (max-width: 1023px) {
+        display: none;
     }
 }
 .header__menu {
@@ -147,6 +165,9 @@ img {
         padding: 8px 16px;
         transition: all 0.2s ease-in-out;
         border-radius: 4px;
+        @media screen and (max-width: 1023px) {
+            padding: 4px 8px;
+        }
         &:hover {
             background-color: #384aae;
         }
@@ -196,7 +217,8 @@ img {
 // *********************************************************************
 
 .content {
-    margin: 64px 0;
+    padding: 4rem 0;
+    position: relative;
 }
 
 // *********************************************************************
@@ -276,47 +298,82 @@ img {
     .content {
         display: grid;
         grid-template: auto auto auto/360px auto;
-        gap: 12px;
+        gap: 16px;
+        @media screen and (max-width: 1023px) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
 // *********************************************************************
 
 .about-card {
-    grid-column: 1/2;
-    grid-row: 2/max-content;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 1024px) {
+        grid-column: 1/2;
+        grid-row: 2/max-content;
+    }
+    @media screen and (max-width: 1023px) {
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
 }
 .about-card__inner {
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
+    display: grid;
+    gap: 16px;
+    @media screen and (min-width: 540px) {
+        grid-template-columns: 200px 1fr;
+    }
+    @media screen and (min-width: 1024px) {
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 16px;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 0;
+    }
 }
 .about-card__photo {
-    max-width: 100%;
-    height: auto;
+    max-width: 290px;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    @media screen and (min-width: 540px) {
+        max-width: 100%;
+    }
 }
 .about-card__info {
     display: grid;
     gap: 8px;
-    text-align: center;
-    padding: 32px;
+    align-content: flex-start;
+    @media screen and (min-width: 1024px) {
+        padding: 1rem;
+    }
 }
 .about-card__fio {
     font-size: 20px;
     font-weight: 700;
+    text-align: center;
+    @media screen and (min-width: 540px) and (max-width: 1023px) {
+        text-align: left;
+    }
 }
 .about-card__position {
-    margin-top: -8px;
     margin-bottom: 16px;
+    text-align: center;
+    @media screen and (min-width: 540px) and (max-width: 1023px) {
+        text-align: left;
+    }
 }
 .about-card__field {
-    display: grid;
-    gap: 8px;
-    grid-template-columns: 90px 1fr;
-    text-align: left;
-}
+     display: grid;
+     gap: 8px;
+     grid-template-columns: 90px 1fr;
+ }
 .about-card__field-label {
     font-weight: 700;
 }
@@ -348,6 +405,12 @@ img {
     justify-content: center;
     gap: 16px;
     margin-top: 16px;
+    @media screen and (min-width: 540px) and (max-width: 1023px) {
+        justify-content: flex-start;
+    }
+    //@media screen and (max-width: 1023px) {
+    //    justify-content: flex-start;
+    //}
 }
 .social__item {}
 .social__link {
@@ -363,18 +426,28 @@ img {
 // *********************************************************************
 
 .skils {
-    grid-column: 2/3;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    padding: 28px 32px 32px 32px;
-
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
-    grid-column-gap: 32px;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 1024px) {
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+        grid-column: 2/3;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 28px 32px 32px 32px;
+    }
+    @media screen and (max-width: 1023px) {
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
     p {
         &:last-child {
             margin-bottom: 0;
@@ -411,13 +484,24 @@ img {
 // *********************************************************************
 
 .about {
-    grid-column: 2/3;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    padding: 28px 32px 32px 32px;
+    @media screen and (min-width: 1024px) {
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-column: 2/3;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 28px 32px 32px 32px;
+    }
+    @media screen and (max-width: 1023px) {
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
     p {
         &:last-child {
             margin-bottom: 0;
@@ -428,13 +512,24 @@ img {
 // *********************************************************************
 
 .education {
-    grid-column: 2/3;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    padding: 28px 32px 32px 32px;
+    @media screen and (min-width: 1024px) {
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-column: 2/3;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 28px 32px 32px 32px;
+    }
+    @media screen and (max-width: 1023px) {
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }
     p {
         &:last-child {
             margin-bottom: 0;
@@ -445,13 +540,19 @@ img {
 // *********************************************************************
 
 .place-work {
-    grid-column: 2/3;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    padding: 28px 32px 32px 32px;
+    @media screen and (min-width: 1024px) {
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fff;
+        box-shadow: var(--box-shadow);
+        padding: 1rem;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-column: 2/3;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 28px 32px 32px 32px;
+    }
     p {
         &:last-child {
             margin-bottom: 0;
@@ -469,7 +570,7 @@ img {
     display: grid;
     //grid-column-gap: 32px;
     //grid-template: repeat(3, minmax(auto, auto))/462px auto;
-    grid-row-gap: 32px;
+    grid-row-gap: 1rem;
     //border: 1px solid var(--border-color);
     //border-radius: var(--border-radius);
     //background-color: #fff;
@@ -479,6 +580,9 @@ img {
     //padding-bottom: 64px;
     //margin-bottom: 64px;
     //border-bottom: 1px solid #e1e1e1;
+    @media screen and (min-width: 640px) {
+        grid-row-gap: 2rem;
+    }
     @media screen and (min-width: 1281px) {
         padding: 0 150px;
     }
@@ -503,10 +607,12 @@ img {
 }
 .work__view {
     display: grid;
-    grid-gap: 32px;
-    grid-template-columns: 120px 120px 1fr;
+    grid-gap: 1rem;
+    @media screen and (min-width: 640px) {
+        grid-template-columns: 120px 120px 1fr;
+        grid-row-gap: 2rem;
+    }
     span {
-        //font-size: 14px;
         color: rgba(29,29,36,.45);
         display: block;
         font-weight: 500;
@@ -539,299 +645,58 @@ img {
     }
 }
 
-// ТехМашИнвест. Запчасти
-.work-1 {
+
+.work-1, // ТехМашИнвест. Запчасти
+.work-2, // ТехМашИнвест. Спецтехника
+.work-3, // Жемчужина Урала
+.work-4, // Уральский ригиональный центр ЯМЗ
+.work-5, // Show Company
+.work-6, // Номас
+.work-7, // Гермес
+.work-8, // АвтоСпецВан
+.work-9, // СпецТрансАвто
+.work-10, // КТБмаш
+//.work-11, // УралМобиле
+.work-12, // РИФ Спецтехника
+.work-13, // РИФ Запчасти
+.work-14, // АСТ Слон
+.work-15, // Полиграф
+//.work-16, // Гостевой дом Анастасия
+.work-17, // ГОФРОТАРА
+.work-18, // YumorClub
+//.work-19, // Авангард
+.work-20, // Чайный Гуру
+.work-21, // Розовая Панда
+.work-22, // Сапфир
+//.work-23, // ВЕКТОР — Металлоконструкции
+.work-24, // ЯМЗ Экспорт
+.work-25, // АСЕПТЛАЙН
+.work-26, // УралСпецТранс
+.work-27, // СпецТехКомплект
+//.work-28, // Пирамида. Сотрудничество
+//.work-29, // Мир на ощупь. Франшиза
+//.work-30, // Мир на ощупь. О проекте
+//.work-31, // Мир на ощупь. Бизнес-тренинги
+//.work-32, // АКСИОМА. Пластиковые окна
+//.work-33, // АКСИОМА. Остекление балконов
+.work-34, // НПО ВЕКТОР. Главная
+//.work-35, // IXAT Bonus
+//.work-36, // Villagio Millennium Park
+//.work-37, // Кафе LaScala
+//.work-38, // Star Light JETS
+//.work-39, // Компьютерная помощь в Москве и Московской области
+//.work-40, // Курсы вождения и восстановления навыков для женщин
+//.work-41, // Автобус 44
+//.work-42, // chok chok
+.work-48, // «Уральская Спецтехника» - Продажа спецтехники УРАЛ и КАМАЗ
+.work-49, // ГК «СПЕЦТЕХНИКА»
+.work-50 { // Техавтоком
     .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
-
-// ТехМашИнвест. Спецтехника
-.work-2 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Жемчужина Урала
-.work-3 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Уральский ригиональный центр ЯМЗ
-.work-4 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Show Company
-.work-5 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Номас
-.work-6 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Гермес
-.work-7 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// АвтоСпецВан
-.work-8 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// СпецТрансАвто
-.work-9 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// КТБмаш
-.work-10 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// УралМобиле
-//.work-11 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// РИФ Спецтехника
-.work-12 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// РИФ Запчасти
-.work-13 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// АСТ Слон
-.work-14 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Полиграф
-.work-15 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Гостевой дом Анастасия
-//.work-16 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// ГОФРОТАРА
-.work-17 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// YumorClub
-.work-18 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Авангард
-//.work-19 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Чайный Гуру
-.work-20 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Розовая Панда
-.work-21 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Сапфир
-.work-22 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// ВЕКТОР — Металлоконструкции
-//.work-23 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// ЯМЗ Экспорт
-.work-24 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// АСЕПТЛАЙН
-.work-25 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// УралСпецТранс
-.work-26 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// СпецТехКомплект
-.work-27 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// Пирамида. Сотрудничество
-//.work-28 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Мир на ощупь. Франшиза
-//.work-29 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Мир на ощупь. О проекте
-//.work-30 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Мир на ощупь. Бизнес-тренинги
-//.work-31 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// АКСИОМА. Пластиковые окна
-//.work-32 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// АКСИОМА. Остекление балконов
-//.work-33 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// НПО ВЕКТОР. Главная
-.work-34 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-// IXAT Bonus
-//.work-35 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Villagio Millennium Park
-//.work-36 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Кафе LaScala
-//.work-37 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Star Light JETS
-//.work-38 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Компьютерная помощь в Москве и Московской области
-//.work-39 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Курсы вождения и восстановления навыков для женщин
-//.work-40 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// Автобус 44
-//.work-41 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-
-// chok chok
-//.work-42 {
-//    .work__desktop-gallery {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
 
 // Калькулятор тонировки автомобилей
 .work-43 {
@@ -841,46 +706,42 @@ img {
     }
 }
 
-// «Уральская Спецтехника» - Продажа спецтехники УРАЛ и КАМАЗ
-.work-48 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+// *********************************************************************
 
-// ГК «СПЕЦТЕХНИКА»
-.work-49 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
+.to-back-page {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    &:hover {
+        color: var(--link-hover);
     }
-}
-
-// Техавтоком
-.work-50 {
-    .work__desktop-gallery {
-        grid-template-columns: 1fr 1fr;
+    &::before {
+        content: "\f177";
+        font-family: var(--awesome);
+        font-weight: 400;
+        //position: absolute;
+        //top: 0;
+        //left: 0;
+        //bottom: 0;
     }
 }
 
 // *********************************************************************
 
-.to-back-page {
-    margin-bottom: 16px;
-    span {
-        position: relative;
-        padding-left: 20px;
-        cursor: pointer;
-        &:hover {
-            color: var(--link-hover);
-        }
-        &::before {
-            content: "\f177";
-            font-family: var(--awesome);
-            font-weight: 900;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-        }
+.footer {
+    border-top: 1px solid rgba(152,166,173,.2);
+    padding: 19px 0 20px;
+    color: #98a6ad;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+}
+.counter {
+    a {
+        border: none;
     }
 }

@@ -80,7 +80,7 @@ function Work(props) {
 			<Header/>
 			<div className={"content"}>
 
-				<div className={"to-back-page"} onClick={props.history.goBack}><span>назад</span></div>
+				<div className={"to-back-page"} onClick={props.history.goBack}>назад</div>
 
 				<div className={`work work-${workData.id}`}>
 					<div className={"work__card"}>

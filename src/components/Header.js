@@ -64,9 +64,9 @@ function Header() {
     return (
         <div className={"header"}>
             <div className={"header__inner"}>
-                <div className={"header__name"}>
-                    <div><span>FrontEnd Портфолио</span></div>
-                    <div>Приданников Михаил</div>
+                <div className={"header__names"}>
+                    <div className={"header__name1"}>FrontEnd Портфолио</div>
+                    <div className={"header__name2"}>Приданников Михаил</div>
                 </div>
                 <ul className={"header__menu"}>
                     <li>
