@@ -118,7 +118,7 @@ export default function CardWork(props) {
 						className={"btn btn-primary"}
 					>Подробнее</ Link>
 					{/*{ props.data.url && <a className={""} href={`http://${props.data.url}`} target={"_blank"}>Перейти на сайт</a> }*/}
-					{/*{ props.data.demo && <a className={""} href={props.data.demo} target={"_blank"}>Посмотреть демо</a> }*/}
+					{ props.data.demo && <a className={""} href={props.data.demo} target={"_blank"}>Посмотреть демо</a> }
 				</div>
 			</div>
 		</div>

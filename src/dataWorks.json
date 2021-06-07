@@ -1074,7 +1074,7 @@
 		"gallery-desktop": [
 			"screen-01.jpg"
 		],
-		"demo": "https://mihail-174.github.io/portfolio/work/configurator-zvmslon-vuejs/dist/",
+		"demo": "https://mihail-174.github.io/vuejs-configurator-zvmslon/",
 		"descr": "Данный конфигуратор выполнен в двух вариантах: на javascript и на vuejs. Данные подгружаются из json файлов. На каждый тип автомобиля свой файл.",
 		"time": "",
 		"url": "",
