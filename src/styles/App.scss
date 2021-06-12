@@ -430,7 +430,7 @@ img {
     grid-template-columns: 1fr;
     gap: 16px;
     @media screen and (min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     @media screen and (min-width: 1024px) {
         border: 1px solid var(--border-color);
@@ -646,51 +646,55 @@ img {
 }
 
 
-.work-1, // ТехМашИнвест. Запчасти
-.work-2, // ТехМашИнвест. Спецтехника
-.work-3, // Жемчужина Урала
-.work-4, // Уральский ригиональный центр ЯМЗ
-.work-5, // Show Company
-.work-6, // Номас
-.work-7, // Гермес
-.work-8, // АвтоСпецВан
-.work-9, // СпецТрансАвто
-.work-10, // КТБмаш
-//.work-11, // УралМобиле
-.work-12, // РИФ Спецтехника
-.work-13, // РИФ Запчасти
-.work-14, // АСТ Слон
-.work-15, // Полиграф
-//.work-16, // Гостевой дом Анастасия
-.work-17, // ГОФРОТАРА
-.work-18, // YumorClub
-//.work-19, // Авангард
-.work-20, // Чайный Гуру
-.work-21, // Розовая Панда
-.work-22, // Сапфир
-//.work-23, // ВЕКТОР — Металлоконструкции
-.work-24, // ЯМЗ Экспорт
-.work-25, // АСЕПТЛАЙН
-.work-26, // УралСпецТранс
-.work-27, // СпецТехКомплект
-//.work-28, // Пирамида. Сотрудничество
-//.work-29, // Мир на ощупь. Франшиза
-//.work-30, // Мир на ощупь. О проекте
-//.work-31, // Мир на ощупь. Бизнес-тренинги
-//.work-32, // АКСИОМА. Пластиковые окна
-//.work-33, // АКСИОМА. Остекление балконов
-.work-34, // НПО ВЕКТОР. Главная
-//.work-35, // IXAT Bonus
-//.work-36, // Villagio Millennium Park
-//.work-37, // Кафе LaScala
-//.work-38, // Star Light JETS
-//.work-39, // Компьютерная помощь в Москве и Московской области
-//.work-40, // Курсы вождения и восстановления навыков для женщин
-//.work-41, // Автобус 44
-//.work-42, // chok chok
-.work-48, // «Уральская Спецтехника» - Продажа спецтехники УРАЛ и КАМАЗ
-.work-49, // ГК «СПЕЦТЕХНИКА»
-.work-50 { // Техавтоком
+.work-tmi-shop, // ТехМашИнвест. Запчасти
+.work-tmidv, // ТехМашИнвест. Спецтехника
+.work-ural-pearl, // Жемчужина Урала
+.work-urc-yamz, // Уральский ригиональный центр ЯМЗ
+.work-showcompany, // Show Company
+.work-nomas, // Номас
+.work-pivzavod-germes, // Гермес
+.work-asv74, // АвтоСпецВан
+.work-cta-miass, // СпецТрансАвто
+.work-ktbmash, // КТБмаш
+//.work-uralmob, // УралМобиле
+.work-rifst, // РИФ Спецтехника
+.work-rifural, // РИФ Запчасти
+.work-astslon, // АСТ Слон
+.work-miassprint, // Полиграф
+//.work-feocrim, // Гостевой дом Анастасия
+.work-tara174, // ГОФРОТАРА
+.work-yumorclub, // YumorClub
+//.work-avangard174, // Авангард
+.work-chainyiguru, // Чайный Гуру
+.work-rosepanda, // Розовая Панда
+.work-sapfirmiass, // Сапфир
+//.work-vektormk, // ВЕКТОР — Металлоконструкции
+.work-ymz-export, // ЯМЗ Экспорт
+.work-aseptline, // АСЕПТЛАЙН
+.work-uralst, // УралСпецТранс
+.work-spectechcom, // СпецТехКомплект
+//.work-piramida-plus_cooperation, // Пирамида. Сотрудничество
+//.work-touch-world_franshiza, // Мир на ощупь. Франшиза
+//.work-touch-world_o-proekte, // Мир на ощупь. О проекте
+//.work-touch-world_biznes-treningi, // Мир на ощупь. Бизнес-тренинги
+//.work-aksioma174, // АКСИОМА. Пластиковые окна
+//.work-aksioma174_osteklenie-balkonov, // АКСИОМА. Остекление балконов
+//.work-ixat-bonus, // IXAT Bonus
+//.work-villagio-millennium-park, // Villagio Millennium Park
+//.work-lascala, // Кафе LaScala
+//.work-star-light-jets, // Star Light JETS
+//.work-pc-help, // Компьютерная помощь в Москве и Московской области
+//.work-energy-of-motion, // Курсы вождения и восстановления навыков для женщин
+//.work-autobus-44, // Автобус 44
+//.work-chok-chok, // chok chok
+//.work-configurator-toner, // Калькулятор тонировки автомобилей
+//.work-configurator-vektornpo, // Конфигуратор спецтехники НПО ВЕКТОР
+//.work-configurator-aksioma174, // Конфигуратор окон aksioma174
+//.work-japanese-crossword, // Японские кроссворды
+//.work-configurator-zvmslon, // Конфигуратор спецтехники zvmslon
+.work-uralst74, // «Уральская Спецтехника» - Продажа спецтехники УРАЛ и КАМАЗ
+.work-ural174, // ГК «СПЕЦТЕХНИКА»
+.work-tak74 { // Техавтоком
     .work__desktop-gallery {
         @media screen and (min-width: 768px) {
             grid-template-columns: 1fr 1fr;

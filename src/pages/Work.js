@@ -39,11 +39,11 @@ function Work(props) {
 	const [dense, setDense] = React.useState(false);
 	const [secondary, setSecondary] = React.useState(false);
 	// const id = parseInt(props.match.params.id) - 1;
-	const id = props.match.params.id;
+	const name = props.match.params.name;
 	document.documentElement.scrollTop = 0;
 
-	let workData = dataWorks.filter(item=> {
-		if ( item.id === parseInt(id) ) {
+	let workData = dataWorks.filter(item => {
+		if ( item.system === name ) {
 			return item;
 		}
 	});
@@ -82,7 +82,7 @@ function Work(props) {
 
 				<div className={"to-back-page"} onClick={props.history.goBack}>назад</div>
 
-				<div className={`work work-${workData.id}`}>
+				<div className={`work work-${workData.system}`}>
 					<div className={"work__card"}>
 						{/*<img*/}
 						{/*	className={"work__image"}*/}

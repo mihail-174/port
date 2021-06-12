@@ -95,7 +95,7 @@ export default function CardWork(props) {
 	const classes = useStyles();
 
 	return (
-		<div className={`teaser-work teaser-work-${props.data.id}`}>
+		<div className={`teaser-work`}>
 			<div className={"field-image"}>
 				<img src={"images/works/" + props.data.system + "/preview.jpg"} alt=""/>
 			</div>
@@ -112,7 +112,7 @@ export default function CardWork(props) {
 				<div className={"field-group-btns"}>
 					<Link
 						to={{
-							pathname: "/work/"+props.data.id,
+							pathname: "/work/"+props.data.system,
 							propsData: props.data,
 						}}
 						className={"btn btn-primary"}

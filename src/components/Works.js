@@ -98,8 +98,8 @@ function Works(props) {
 							// {/*<Paper className={classes.paper}>*/}
 							// {/*	<CardWork/>*/}
 							// {/*	{ item.name }*/}
-							// {/*</Paper>*/}
-							// {/*</Grid>*/}
+							// {/*</Paper>*/
+							// 							// {/*</Grid>*/}}
 						)
 					})
 				}
