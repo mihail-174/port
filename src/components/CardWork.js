@@ -1,16 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom'
-import Chip from '@material-ui/core/Chip';
-
-import SimpleDialogDemo from "./SimpleDialogDemo";
 
 const useStyles = makeStyles((theme) => ({
 	// root: {
@@ -97,7 +87,14 @@ export default function CardWork(props) {
 	return (
 		<div className={`teaser-work`}>
 			<div className={"field-image"}>
-				<img src={"images/works/" + props.data.system + "/preview.jpg"} alt=""/>
+				<Link
+					to={{
+						pathname: "/work/"+props.data.system,
+						propsData: props.data,
+					}}
+				>
+					<img src={"images/works/" + props.data.system + "/preview.jpg"} alt=""/>
+				</Link>
 			</div>
 			<div className={"field-group-info"}>
 				<div className={"field-name"}>{ props.data.name }</div>
@@ -116,7 +113,7 @@ export default function CardWork(props) {
 							propsData: props.data,
 						}}
 						className={"btn btn-primary"}
-					>Подробнее</ Link>
+					>Подробнее</Link>
 					{/*{ props.data.url && <a className={""} href={`http://${props.data.url}`} target={"_blank"}>Перейти на сайт</a> }*/}
 					{ props.data.demo && <a className={""} href={props.data.demo} target={"_blank"}>Посмотреть демо</a> }
 				</div>

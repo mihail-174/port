@@ -1,20 +1,7 @@
 import React, {useState} from "react";
-import Toolbar from "@material-ui/core/Toolbar";
-import Container from "@material-ui/core/Container";
 import Header from "../components/Header";
-import SimpleTabs from "../components/SimpleTabs";
-import BackToTop from "../components/BackToTop";
 import {makeStyles} from "@material-ui/core/styles";
 import dataWorks from "../dataWorks";
-
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import ListItemText from '@material-ui/core/ListItemText';
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
@@ -118,14 +105,10 @@ function Work(props) {
 									</div>
 								</div>
 						}
+
+						{ workData.demo && <a className="work__view-demo btn btn-primary" href={workData.demo} target={"_blank"}>Посмотреть демо</a> }
 					</div>
-					{/*<div className={"work__gallery"}>*/}
-					{/*	<img*/}
-					{/*		className={""}*/}
-					{/*		src={"images/gallery/" + workData.gallery}*/}
-					{/*		alt=""*/}
-					{/*	/>*/}
-					{/*</div>*/}
+
 					{
 						desktopGallery &&
 						<div className={"work__desktop-gallery"}>
