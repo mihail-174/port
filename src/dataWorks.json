@@ -106,6 +106,28 @@
 		"javascript": true
 	},
 	{
+		"system": "viraj-spb",
+		"name": "Вираж — рекламная компания",
+		"preview": "viraj-spb",
+		"gallery-desktop": [
+			"desktop-01.png"
+		],
+		"gallery-mobile": [],
+		"demo": "https://mihail-174.github.io/viraj-spb/",
+		"descr": "",
+		"used": "",
+		"cms": "",
+		"time": "",
+		"url": "",
+		"all": true,
+		"site": false,
+		"landing": true,
+		"configurator": false,
+		"react": false,
+		"vue": false,
+		"javascript": false
+	},
+	{
 		"system": "ixat-bonus",
 		"name": "IXAT Bonus",
 		"preview": "ixat-bonus",
